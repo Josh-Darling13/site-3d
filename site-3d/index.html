@@ -5,35 +5,383 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <script src="https://kit.fontawesome.com/149947b7df.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
     <canvas id="bg"></canvas>
     <main>
+
     <header>
       <h1>Josh Darling</h1>
-      <p>Welcome to my Portfolio</p>
+      <hr />
+        <p>I write test driven code.</p>
     </header>
-    <blockquote>
-      <p>I love the challenge of complex builds, and stuff like this...</p>
-    </blockquote>
-    <section>
-      <h2>Brief bit about software design and freelancing.</h2>
-      <p>Listmaker Plus</p>
-      <p>Jen's site</p>
+
+      <section class="intro">
+        <h2>Available for Freelance or Fulltime Work --Make it Interesting.</h2>
+        <p>I've been coding off and on for so long when I started Perl was relevant. I view programing as problem solving and the languages as the path to the solution. I'm more than happy to jump on an Agile team and start reaching for that Kanban board.
+        </p>
+        <p>
+          Homemade Pong made with Python and Kivy is always relevant...
+          <br />View my code for this here, serious projects below:
+          <br />
+          <img src="./img/pong.jpg" style="float: inline-end; margin: auto;">
+        </p>
+      </section>
+      <section class="project">
+        <!-- TITLE OF SECTION -->
+        <div class="title-spacer">
+          <div class="title-box">
+            <a id="projects">
+              <h2>Projects</h2>
+            </a>
+          </div>
+        </div>
+        <!-- PROJECT ARTICLES  -->
+        <div class="projects">
+          <div class="projects-top" >
+            <!-- LISTMAKER PLUS DISPLAY THIS IS THE 1ST BOX IN THE UPPER GIRD -->
+            <article>
+              <!-- Project Title -->
+              <div class="project-descript">
+                <h1>Listmaker Plus 0.1</h1>
+              </div>
+              <div class="article-body">
+                <div class="project-img">
+                <!-- Project image & link to project -->
+                  <a href="https://darckode.com/listmaker/index.html" target="_blank">
+                  <img src="./img/listmaker.jpg" alt="Listmaker Plus" class="img-link">
+                  </a>
+                </div>
+                <div class="project-descript">
+                  <!-- Project Description -->
+                  <p>
+                    <u>Description:</u>
+                    <br>Listmaker Plus is a Javascript-based desktop application designed to write code for the busy developer. Currently, it writes HTML, CSS, Javascript, and some basic React and Perl. Soon, I'll expand it to include Python, JSX, C/C++, PHP, etc. In upcoming versions, downloadable templates of prewritten code will be available. I designed it to be functional and look good. It has an animated header and a fully animated background.<br/>
+                    <br/>
+                    I wrote this program for myself. Since I only code on my computer, I designed this desktop first. Versions for mobile and tablet screen sizes are in development.
+                  </p>
+                  <p>
+                    <u>Skills:</u>
+                    <br>Javascript, HTML, CSS, React, Perl
+                  </p>
+                  <p>
+                    <u>Tools:</u>
+                    <br>Visual Studio Code, Chrome Dev Tools, GitHub Pages, Node (testing files.)
+                  </p>
+                </div>
+                <div class="proj-end">
+                  <div class="button-div">
+                    <!-- Link to Project -->
+                    <a href="https://darckode.com/listmaker/index.html" target="_blank">
+                      <div class="link-project">
+                        link to project
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+  
+            <!-- GITHUB REPO DISPLAY THIS IS THE 2ND BOX IN THE UPPER GIRD  -->
+            <article>
+              <!-- Project Title -->
+              <div class="project-descript">
+                <h1>Github Repo Gallery</h1>
+              </div>
+              <div class="article-body">
+                <div class="project-img">
+                  <!-- Project image & link to project -->
+                  <a href="https://josh-darling13.github.io/github-repo-gallery/" target="_blank">
+                    <img src="./img/git-repo.jpg" alt="github repo gallery" class="img-link">
+                  </a>
+                </div>
+                <div class="project-descript">
+                  <!-- Project Description -->
+                  <p>
+                  <u>Description:</u>
+                    <br>Uses GitHub's API to pull data from my GitHub portfolio to
+                    create a gallery of repos. Visitors to the site can
+                    click on the repos to see more details and a link to the repo.
+                  </p>
+                  <p>
+                    <u>Skills:</u>
+                    <br>Javascript, REST, API
+                  </p>
+                  <p>
+                    <u>Tools:</u>
+                    <br>Visual Studio Code, Chrome Dev Tools, GitHub Pages
+                  </p>
+                </div>
+                <div class="proj-end">
+                  <div class="button-div">
+                    <!-- Link to Project -->
+                    <a href="https://josh-darling13.github.io/github-repo-gallery/" target="_blank">
+                      <div class="link-project">
+                      link to project
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
     </section>
 
     <section>
-      <h2>Languages and Technologies</h2>
-      <div>
-      <div>Languages with logos</div>
-      <div>Applications</div>
+      <div class="butfornow">
+        <div class="title-spacer">
+          <div class="title-box">
+            <a id="skills">
+              <h2>Skills</h2>
+            </a>
+          </div>
+        </div>
+        <div class="div-divide" >
+          <!--An empty div-->
+        </div>
+        <!-- SKILL LIST -->
+        <div class="skills-body">
+          <div class="skill-size">
+            <h2>Languages</h2>
+            <p>Because you work in HR and someone said I had to have these skills on a checklist. If you're looking to hire a web/software developer just, if you can think it, I can build it in any language you ask.</p>
+            <div class="skill-set">
+              <div class="mad-skills">
+                <ul id="skillList">
+                  <li>
+                  Javascript
+                  <br/>
+                  <img src="https://img.icons8.com/color/100/null/javascript--v1.png" class="icon"/>
+                  </li>
+
+                  <li>
+                    Three.js
+                    <br />
+                    <img src="./img/threejs.png" class="icon"/>
+                  </li>
+                  <li>
+                    WebGL
+                    <br />
+                    <img src="./img/webGL.webp" class="icon"/>
+                  </li>
+                  <li>
+                    React
+                    <br />
+                    <img src="https://img.icons8.com/plasticine/100/null/react.png" class="icon"/>
+                  </li>
+                  <li>
+                    Rest APIs
+                    <br />
+                    <img src="https://img.icons8.com/plasticine/100/null/api-settings.png"
+                    class="icon"/>
+                  </li>
+                  <li>
+                  HTML
+                  <br />
+                  <img src="https://img.icons8.com/color/48/null/html-5--v2.png" class="icon"/>
+                  </li>
+                  <li>
+                    CSS
+                    <br />
+                    <img src="./img/css.webp" class="icon"/>
+                  </li>
+                  <li>
+                    Bootstrap
+                    <br />
+                    <img src="https://img.icons8.com/color/48/null/bootstrap.png" class="icon"/>
+                  </li>
+                  <li>
+                    Rust
+                    <br />
+                    <img src="https://img.icons8.com/color/96/null/rust-programming-language.png" class="icon"/>
+                  </li>
+                  <li>
+                    Python
+                    <br />
+                    <img src="https://img.icons8.com/color/96/null/python--v1.png"  class="icon"/>
+
+                  </li>
+                  <li>
+                    Kivy
+                    <br />
+                    <img src="./img/Kivy.webp" class="icon"/>
+
+                  </li>
+                  <li>
+                    PHP
+                    <br />
+                    <img src="https://img.icons8.com/ios-filled/150/null/php-logo.png"  class="icon"/>
+
+                  </li>
+                  <li>
+                    Perl
+                    <br />
+                    <img src="https://img.icons8.com/color/144/null/perl.png"  class="icon"/>
+
+                  </li>
+                  <li>
+                    SQL
+                    <br />
+                    <img src="./img/sql.png" class="icon"/>
+                  </li>
+                  <li>
+                    Mongodb
+                    <br />
+                    <img src="https://img.icons8.com/color/144/null/mongodb.png"  class="icon"/>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        <div class="skill-size">
+            <div class="tech-stack">
+              <!-- <div> -->
+              <h2>Tech Stack</h2>
+            </div>
+            <div class="skill-set">
+              <ul class="madSkills">
+                <li>
+                  Git and GitHub
+                </li>
+                <li>
+                  Chrome Dev Tools
+                </li>
+                <li>
+                  CodeSandbox
+                </li>
+                <li>
+                  Visual Studio Code
+                </li>
+                <li>
+                  Node
+                </li>
+                <li>
+                  NPM
+                </li>
+                <li>
+                  MySQL
+                </li>
+                <li>
+                  Discord
+                </li>
+                <li>
+                  Slack
+                </li>
+                <li>
+                  Jira
+                </li>
+
+                <li>
+                  Eclipse IDE
+                </li>
+                <li>
+                  Linux
+                </li>
+                <li>
+                  Responsive Web
+                  <br>
+                  Development
+                </li>
+                <li>
+                  Adobe Photoshop
+                </li>
+                <li>
+                  Adobe Premiere
+                </li>
+                <li>
+                  Sony Vegas
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2>contact</h2>
-      <p>contact info</p>
+    <section class="about">
+      <!-- TITLE OF SECTION -->
+
+
+          <h2>About</h2>
+
+            <div class="bio">
+              <img src="./img/headshot-sized.jpg" alt="Portrait of Josh Darling" id="headshot-sized">
+                <p class="bio-words">I'm a frontend developer who
+                  loves working with Javascript and React. I enjoy
+                  reading and hiking in the mountains near my home.
+                </p>
+            </div>
+
+
     </section>
+
+
+    <footer>
+      <div class="content-wrapper">
+        <div class="footer-content">
+          <div class="contact">
+            <a id="contact"><h2 id="con-header">Contact</h2></a>
+            <address>
+              <p id="place-phone">
+                Currently in Vermont,<br>
+                may relocate.<br>
+                <br>
+                <br>
+                <a href="tel:8134504187">
+                  <i class="fa-solid fa-phone fa-2x"></i>
+                  <br>
+                  <br>
+                  813-450-4187
+                </a>
+                <br>
+                <br>
+                <a href="mailto:SquidDarling@gmail.com">SquidDarling<br>@gmail.com</a>
+              </p>
+            </address>
+          </div>
+          <div class="social">
+            <h3>Social</h3>
+            <hr>
+            <div class="social-icons">
+              <ul class="socialist">
+                <li>
+                  <a href="https://www.linkedin.com/in/josh-darling-developer" target="_blank" id="soc-link">
+                    <i class="fa-brands fa-linkedin fa-2x"></i>
+                    <p class="icon-text">
+                    LinkedIn</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/Josh-Darling13" target="_blank">
+                    <i class="fa-brands fa-github fa-2x"></i>
+                    <p class="icon-text">
+                    GitHub</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/SquidDarling" target="_blank">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                    <p class="icon-text">
+                    Facebook</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <a href="mailto:SquidDarling@gmail.com" >
+          <p>
+            Copyright
+            <script>document.write(new Date().getFullYear());</script>
+             | Josh Darling
+          </p>
+        </a>
+      </div>
+    </footer>
 
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
