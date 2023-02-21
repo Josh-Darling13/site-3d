@@ -4,103 +4,77 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Josh Darling Developer At Large</title>
     <script src="https://kit.fontawesome.com/149947b7df.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fade.css">
+    <script defer src="app.js"></script>
   </head>
   <body>
     <canvas id="bg"></canvas>
     <main>
 
-    <header>
+    <header class="hidden">
       <h1>Josh Darling</h1>
       <hr />
         <p>I write test driven code.</p>
     </header>
 
-      <section class="intro">
-        <h2>Available for Freelance or Fulltime Work --Make it Interesting.</h2>
-        <p>I've been coding off and on for so long when I started Perl was relevant. I view programing as problem solving and the languages as the path to the solution. I'm more than happy to jump on an Agile team and start reaching for that Kanban board.
-        </p>
-        <p>
-          Homemade Pong made with Python and Kivy is always relevant...
-          <br />View my code for this here, serious projects below:
-          <br />
-          <img src="./img/pong.jpg" style="float: inline-end; margin: auto;">
-        </p>
+      <section id="intro" class="hidden">
+        <div class="hidden">
+          <h2>Available for Fulltime or Freelance Work --Make it Interesting.</h2>
+          <p>I've been coding off and on for so long, when I started Perl was relevant. I view programing as problem solving and the languages as the pathway to the solution. I'm available for freelance work, but I'm more than happy to jump on an Agile team and start reaching for that kanban board.
+          </p>
+          <p>
+            <a href="https://github.com/Josh-Darling13/pong/blob/main/main.py">
+            Unlike Perl, Pong is always relevant. Click here to checkout my Python code on Github.
+
+            <p></p>
+            <img src="./img/pong.jpg" id = "pong" style='float: inline-end;' alt="screen capture of my pong game" />
+            </a>
+          </p>
+        </div>
       </section>
-      <section class="project">
+      <section class="hidden">
         <!-- TITLE OF SECTION -->
         <div class="title-spacer">
-          <div class="title-box">
-            <a id="projects">
               <h2>Projects</h2>
-            </a>
-          </div>
+              <hr/>
         </div>
-        <!-- PROJECT ARTICLES  -->
-        <div class="projects">
-          <div class="projects-top" >
-            <!-- LISTMAKER PLUS DISPLAY THIS IS THE 1ST BOX IN THE UPPER GIRD -->
-            <article>
+            <!-- LISTMAKER PLUS  -->
+            <article class="hidden">
               <!-- Project Title -->
-              <div class="project-descript">
-                <h1>Listmaker Plus 0.1</h1>
-              </div>
-              <div class="article-body">
-                <div class="project-img">
-                <!-- Project image & link to project -->
-                  <a href="https://darckode.com/listmaker/index.html" target="_blank">
-                  <img src="./img/listmaker.jpg" alt="Listmaker Plus" class="img-link">
-                  </a>
-                </div>
-                <div class="project-descript">
-                  <!-- Project Description -->
-                  <p>
-                    <u>Description:</u>
-                    <br>Listmaker Plus is a Javascript-based desktop application designed to write code for the busy developer. Currently, it writes HTML, CSS, Javascript, and some basic React and Perl. Soon, I'll expand it to include Python, JSX, C/C++, PHP, etc. In upcoming versions, downloadable templates of prewritten code will be available. I designed it to be functional and look good. It has an animated header and a fully animated background.<br/>
-                    <br/>
-                    I wrote this program for myself. Since I only code on my computer, I designed this desktop first. Versions for mobile and tablet screen sizes are in development.
-                  </p>
-                  <p>
-                    <u>Skills:</u>
-                    <br>Javascript, HTML, CSS, React, Perl
-                  </p>
-                  <p>
-                    <u>Tools:</u>
-                    <br>Visual Studio Code, Chrome Dev Tools, GitHub Pages, Node (testing files.)
-                  </p>
-                </div>
-                <div class="proj-end">
-                  <div class="button-div">
-                    <!-- Link to Project -->
-                    <a href="https://darckode.com/listmaker/index.html" target="_blank">
-                      <div class="link-project">
-                        link to project
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <h1>Listmaker Plus 0.1</h1>
+              <!-- Project image & link to project -->
+              <a href="https://darckode.com/listmaker/index.html" target="_blank">
+              <img src="./img/listmaker.jpg" alt="Listmaker Plus" class="img-link">
+              </a>
+              <!-- Project Description -->
+              <p>
+                <u>Description:</u>
+                <br/>Listmaker Plus is a Javascript-based web app for desktop use designed to write code for me. I designed it to be functional and look good. It has an animated header and a fully animated background. I wrote this program for myself. Since I only code on my computer, I designed it desktop first. Mobile and tablet versions are in development.
+              </p>
+              <p>
+                <u>Skills:</u>
+                <br>Javascript, HTML, CSS, React, Perl
+              </p>
+              <p>
+                <u>Tools:</u>
+                <br>Visual Studio Code, Chrome Dev Tools, GitHub Pages, Node (testing files.)
+              </p>
+              <hr/>
+              <a href="https://darckode.com/listmaker/index.html" target="_blank">
+                  <h2 style="text-align:center;">link to project</h2>
+              </a>
             </article>
   
-            <!-- GITHUB REPO DISPLAY THIS IS THE 2ND BOX IN THE UPPER GIRD  -->
-            <article>
-              <!-- Project Title -->
-              <div class="project-descript">
+            <article class="hidden">
                 <h1>Github Repo Gallery</h1>
-              </div>
-              <div class="article-body">
-                <div class="project-img">
-                  <!-- Project image & link to project -->
                   <a href="https://josh-darling13.github.io/github-repo-gallery/" target="_blank">
                     <img src="./img/git-repo.jpg" alt="github repo gallery" class="img-link">
                   </a>
-                </div>
-                <div class="project-descript">
-                  <!-- Project Description -->
                   <p>
                   <u>Description:</u>
                     <br>Uses GitHub's API to pull data from my GitHub portfolio to
@@ -115,262 +89,252 @@
                     <u>Tools:</u>
                     <br>Visual Studio Code, Chrome Dev Tools, GitHub Pages
                   </p>
-                </div>
-                <div class="proj-end">
-                  <div class="button-div">
-                    <!-- Link to Project -->
-                    <a href="https://josh-darling13.github.io/github-repo-gallery/" target="_blank">
-                      <div class="link-project">
-                      link to project
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
+                  <hr/>
+                  <a href="https://josh-darling13.github.io/github-repo-gallery/" target="_blank">
+                      <h2 style="text-align:center;">link to project</h2>
+                  </a>
             </article>
     </section>
 
-    <section>
-      <div class="butfornow">
-        <div class="title-spacer">
-          <div class="title-box">
-            <a id="skills">
-              <h2>Skills</h2>
-            </a>
-          </div>
-        </div>
-        <div class="div-divide" >
-          <!--An empty div-->
-        </div>
-        <!-- SKILL LIST -->
-        <div class="skills-body">
-          <div class="skill-size">
-            <h2>Languages</h2>
-            <p>Because you work in HR and someone said I had to have these skills on a checklist. If you're looking to hire a web/software developer just, if you can think it, I can build it in any language you ask.</p>
-            <div class="skill-set">
-              <div class="mad-skills">
-                <ul id="skillList">
-                  <li>
-                  Javascript
-                  <br/>
-                  <img src="https://img.icons8.com/color/100/null/javascript--v1.png" class="icon"/>
-                  </li>
+    <section class="hidden">
+      <div class="title-spacer">
+            <h2>Skills</h2>
+            <hr/>
+      </div>
+      <h2>Languages</h2>
+      <p>Since you might work in HR and someone said "hire a guy who knows this stuff" here's a list of my stonger skills. Need a web/software developer? If you can think of it, I can build it in the language/platform you need.</p>
+      <div class="mad-skills">
+        <ul id="skillList" class="hidden">
+          <li>
+            Javascript &nbsp;
+            <br/>
+            <img src="https://img.icons8.com/color/100/null/javascript--v1.png" class="icon"/>
+          </li>
+          <li>
+            Three.js &nbsp;
+            <br/>
+            <img src="./img/threejs.png" class="icon"/>
+          </li>
+          <li>
+            WebGL &nbsp;
+            <br/>
+            <img src="./img/webGL.webp" class="icon"/>
+          </li>
+          <li>
+            React &nbsp;
+            <br/>
+            <img src="https://img.icons8.com/plasticine/100/null/react.png" class="icon"/>
+          </li>
+          <li>
+            Next.js &nbsp;
+            <br/>
+            <img src="./img/Next-js.svg" class="icon"/>
+          </li>
+          <li>
+            Rest APIs &nbsp;
+            <br/>
+            <img src="https://img.icons8.com/plasticine/100/null/api-settings.png"
+            class="icon"/>
+          </li>
+          <li>
+            HTML &nbsp;
+            <br>
+            <img src="https://img.icons8.com/color/48/null/html-5--v2.png" class="icon"/>
+          </li>
+          <li>
+            CSS &nbsp;
+            <br>
+            <img src="./img/css.webp" class="icon"/>
+          </li>
+          <li>
+            Bootstrap &nbsp;
+            <br>
+            <img src="https://img.icons8.com/color/48/null/bootstrap.png" class="icon"/>
+          </li>
+          <li>
+            Rust &nbsp;
+            <br>
+            <img src="./img/rustlogo.jfif" class="icon"/>
+          </li>
+          <li>
+            Python &nbsp;
+            <br />
+            <img src="https://img.icons8.com/color/96/null/python--v1.png"  class="icon"/>
+          </li>
+          <li>
+            Kivy &nbsp;
+            <br />
+            <img src="./img/Kivy.webp" class="icon"/>
+          </li>
+          <li>
+            PHP &nbsp;
+            <br />
+            <img src="./img/phpclear.png"  class="icon"/>
+          </li>
+          <li>
+            Perl &nbsp;
+            <br />
+            <img src="https://img.icons8.com/color/144/null/perl.png"  class="icon"/>
+          </li>
+          <li>
+            SQL &nbsp;
+            <br>
+            <img src="./img/sql.png" class="icon"/>
+          </li>
+          <li>
+            Mongodb &nbsp;
+            <br />
+            <img src="https://img.icons8.com/color/144/null/mongodb.png"  class="icon"/>
+          </li>
+        </ul>
+      </div>
+      <div class="hidden">
+        <h2>Tech Stack</h2>
+        <hr/>
+      </div>
+      <div class="hidden">
+        <ul class="hidden">
+          <li>
+            Git and GitHub &nbsp;
+            <img src="./img/git.png" class="icon"/>
+          </li>
+          <li>
+            Chrome Dev Tools &nbsp;
+            <img src="./img/chromedevtools.png" class="icon"/>
+          </li>
+          <li>
+            CodeSandbox &nbsp;
+            <img src="./img/codesandbox.webp" class="icon"/>
+          </li>
+          <li>
+            Visual Studio Code &nbsp;
+            <img src="./img/VScode.png" class="icon"/>
+          </li>
+          <li>
+            Node &nbsp;
+            <img src="./img/Node.png" class="icon"/>
+          </li>
+          <li>
+            NPM &nbsp;
+            <img src="./img/NPM.png" class="icon"/>
+          </li>
+          <li>
+            MySQL &nbsp;
+            <img src="./img/mysql.png" class="icon"/>
+          </li>
+          <li>
+            Discord &nbsp;
+            <img src="./img/discord.png" class="icon"/>
+          </li>
+          <li>
+            Slack  &nbsp;
+            <img src="./img/slack.png" class="icon"/>
+          </li>
+          <li>
+            Jira &nbsp;
+            <img src="./img/jira.jfif" class="icon"/>
+          </li>
 
-                  <li>
-                    Three.js
-                    <br />
-                    <img src="./img/threejs.png" class="icon"/>
-                  </li>
-                  <li>
-                    WebGL
-                    <br />
-                    <img src="./img/webGL.webp" class="icon"/>
-                  </li>
-                  <li>
-                    React
-                    <br />
-                    <img src="https://img.icons8.com/plasticine/100/null/react.png" class="icon"/>
-                  </li>
-                  <li>
-                    Rest APIs
-                    <br />
-                    <img src="https://img.icons8.com/plasticine/100/null/api-settings.png"
-                    class="icon"/>
-                  </li>
-                  <li>
-                  HTML
-                  <br />
-                  <img src="https://img.icons8.com/color/48/null/html-5--v2.png" class="icon"/>
-                  </li>
-                  <li>
-                    CSS
-                    <br />
-                    <img src="./img/css.webp" class="icon"/>
-                  </li>
-                  <li>
-                    Bootstrap
-                    <br />
-                    <img src="https://img.icons8.com/color/48/null/bootstrap.png" class="icon"/>
-                  </li>
-                  <li>
-                    Rust
-                    <br />
-                    <img src="https://img.icons8.com/color/96/null/rust-programming-language.png" class="icon"/>
-                  </li>
-                  <li>
-                    Python
-                    <br />
-                    <img src="https://img.icons8.com/color/96/null/python--v1.png"  class="icon"/>
-
-                  </li>
-                  <li>
-                    Kivy
-                    <br />
-                    <img src="./img/Kivy.webp" class="icon"/>
-
-                  </li>
-                  <li>
-                    PHP
-                    <br />
-                    <img src="https://img.icons8.com/ios-filled/150/null/php-logo.png"  class="icon"/>
-
-                  </li>
-                  <li>
-                    Perl
-                    <br />
-                    <img src="https://img.icons8.com/color/144/null/perl.png"  class="icon"/>
-
-                  </li>
-                  <li>
-                    SQL
-                    <br />
-                    <img src="./img/sql.png" class="icon"/>
-                  </li>
-                  <li>
-                    Mongodb
-                    <br />
-                    <img src="https://img.icons8.com/color/144/null/mongodb.png"  class="icon"/>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        <div class="skill-size">
-            <div class="tech-stack">
-              <!-- <div> -->
-              <h2>Tech Stack</h2>
-            </div>
-            <div class="skill-set">
-              <ul class="madSkills">
-                <li>
-                  Git and GitHub
-                </li>
-                <li>
-                  Chrome Dev Tools
-                </li>
-                <li>
-                  CodeSandbox
-                </li>
-                <li>
-                  Visual Studio Code
-                </li>
-                <li>
-                  Node
-                </li>
-                <li>
-                  NPM
-                </li>
-                <li>
-                  MySQL
-                </li>
-                <li>
-                  Discord
-                </li>
-                <li>
-                  Slack
-                </li>
-                <li>
-                  Jira
-                </li>
-
-                <li>
-                  Eclipse IDE
-                </li>
-                <li>
-                  Linux
-                </li>
-                <li>
-                  Responsive Web
-                  <br>
-                  Development
-                </li>
-                <li>
-                  Adobe Photoshop
-                </li>
-                <li>
-                  Adobe Premiere
-                </li>
-                <li>
-                  Sony Vegas
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+          <li>
+            Eclipse IDE &nbsp;
+            <img src="./img/eclipse.png" class="icon"/>
+          </li>
+          <li>
+            Linux &nbsp;
+            <img src="./img/linux.png" class="icon"/>
+          </li>
+          <li>
+            Blender &nbsp;
+            <br/>
+            <img src="./img/blender.jpg" class="icon"/>
+          </li>
+          <li>
+            Unreal Engin &nbsp;
+            <br/>
+            <img src="./img/unreal.png" class="icon"/>
+          </li>
+          <li>
+            Adobe Photoshop &nbsp;
+            <img src="./img/photoshop.png" class="icon"/>
+          </li>
+          <li>
+            Adobe Premiere &nbsp;
+            <img src="./img/premiere.png" class="icon"/>
+          </li>
+          <li>
+            Sony Vegas &nbsp;
+            <img src="./img/vegas.png" class="icon"/>
+          </li>
+        </ul>
       </div>
     </section>
 
     <section class="about">
-      <!-- TITLE OF SECTION -->
-
-
-          <h2>About</h2>
-
-            <div class="bio">
-              <img src="./img/headshot-sized.jpg" alt="Portrait of Josh Darling" id="headshot-sized">
-                <p class="bio-words">I'm a frontend developer who
-                  loves working with Javascript and React. I enjoy
-                  reading and hiking in the mountains near my home.
-                </p>
-            </div>
-
-
+      <article  class="hidden">
+        <h2>About</h2>
+        <hr/>
+          <div class="bio">
+            <img src="./img/headshot-sized.jpg" alt="Portrait of Josh Darling" id="headshot-sized">
+              <p class="bio-words">At heart I'm a creative builder. That creativity can be expressed as a drawing or a short story or as a something I coded. I enjoy reading and hiking in the mountains near my home. I also have a book out "9 Horror Stories: The Sequel" and I have been published hundreds of times.
+              </p>
+          </div>
+      </article>
     </section>
 
-
-    <footer>
-      <div class="content-wrapper">
-        <div class="footer-content">
-          <div class="contact">
-            <a id="contact"><h2 id="con-header">Contact</h2></a>
-            <address>
-              <p id="place-phone">
-                Currently in Vermont,<br>
-                may relocate.<br>
-                <br>
-                <br>
+    <footer class="hidden">
+      <div class="contact">
+        <h2 id="con-header" style="text-align:left;">Contact</h2>
+        <hr/>
+        <address>
+          <div>
+            <p id="place-phone">
+              Currently in Vermont,<br>
+              may relocate.<br>
+            </P>
+          </div>
+          <div class="centerList">
+            <ul class="hidden">
+              <li style="text-align:center;">
                 <a href="tel:8134504187">
                   <i class="fa-solid fa-phone fa-2x"></i>
                   <br>
                   <br>
                   813-450-4187
                 </a>
-                <br>
-                <br>
-                <a href="mailto:SquidDarling@gmail.com">SquidDarling<br>@gmail.com</a>
-              </p>
-            </address>
+              </li>
+              <li>
+                <a href="mailto:SquidDarling@gmail.com">email:
+                  <br><br>SquidDarling<br>@gmail.com</a>
+              </li>
+            </ul>
           </div>
-          <div class="social">
-            <h3>Social</h3>
-            <hr>
-            <div class="social-icons">
-              <ul class="socialist">
-                <li>
-                  <a href="https://www.linkedin.com/in/josh-darling-developer" target="_blank" id="soc-link">
-                    <i class="fa-brands fa-linkedin fa-2x"></i>
-                    <p class="icon-text">
-                    LinkedIn</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/Josh-Darling13" target="_blank">
-                    <i class="fa-brands fa-github fa-2x"></i>
-                    <p class="icon-text">
-                    GitHub</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/SquidDarling" target="_blank">
-                    <i class="fa-brands fa-facebook fa-2x"></i>
-                    <p class="icon-text">
-                    Facebook</p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        </address>
+      <div class="social-icons">
+        <h2 style="text-align:left;" >Social</h2>
+        <hr>
+        <ul class="hidden" id="socialist">
+          <li>
+            <a href="https://www.linkedin.com/in/josh-darling-developer" target="_blank" id="soc-link">
+              <i class="fa-brands fa-linkedin fa-2x"></i>
+              <p class="icon-text">
+              LinkedIn</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Josh-Darling13" target="_blank">
+              <i class="fa-brands fa-github fa-2x"></i>
+              <p class="icon-text">
+              GitHub</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/SquidDarling" target="_blank">
+              <i class="fa-brands fa-facebook fa-2x"></i>
+              <p class="icon-text">
+              Facebook</p>
+            </a>
+          </li>
+        </ul>
       </div>
       <div class="copyright">
         <a href="mailto:SquidDarling@gmail.com" >
@@ -385,6 +349,7 @@
 
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
+
   </main>
   </body>
 </html>
