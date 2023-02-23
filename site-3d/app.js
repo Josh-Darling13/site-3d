@@ -8,7 +8,5 @@ const observer = new IntersectionObserver((entries)=>{
     })
 });
 
-
-
 const hiddenProjects = document.querySelectorAll('.hidden');
 hiddenProjects.forEach((el)=> observer.observe(el));

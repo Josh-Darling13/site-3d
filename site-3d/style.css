@@ -1,3 +1,4 @@
+
 canvas{
   position: fixed;
   /* width: 100vw;
@@ -104,7 +105,6 @@ li{
   display: flex;
   flex-flow: column;
   align-items: center;
-  /* border: #999 solid 1px; */
   border-radius: 30px;
   margin: 15px;
   margin-bottom: 10px;
@@ -113,7 +113,6 @@ li{
   box-shadow: -1px 3px 16px 4px rgba(3, 3, 3, 0.84) inset;
   -webkit-box-shadow: -1px 3px 16px 4px rgba(0, 0, 0, 0.84) inset;
   -moz-box-shadow: -1px 3px 16px 4px rgba(0, 0, 0, 0.84) inset;
-
 }
 
 footer{
@@ -131,15 +130,12 @@ footer{
   margin-bottom: 15%;
 }
 
-
-
-
 #socialist{
 display: flex;
 justify-content: center;
 }
 
-/* 
+/*
 *************************************************************************
 */
 @media only screen and (min-width: 821px) {
@@ -220,7 +216,7 @@ ul, li{
   justify-content: space-between;
   align-items: flex-start;
   list-style-type: none;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -263,14 +259,13 @@ address{
   align-items: center;
   align-content: center;
   justify-content: center;
-
 }
 
 #socialist{
 display: flex;
 justify-content: center;
-background: none;
+/* background: none;
 box-shadow: none;
 -webkit-box-shadow: none;
--moz-box-shadow: none;
+-moz-box-shadow: none; */
 }

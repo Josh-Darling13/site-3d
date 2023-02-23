@@ -1,0 +1,38 @@
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(254, 0,9);
+    transition: opacity 3.75s, visibility 3.75s;
+    z-index: 99;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 175px;
+    height: 175px;
+    border: 100px solid #1a0000;
+    border-top-color: rgb(41,230,4);
+    border-radius: 50%;
+    animation: loading 3.75s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
