@@ -33,7 +33,7 @@ function addStar(){
 
 Array(300).fill().forEach(addStar);
 
-const backgrd = new THREE.TextureLoader().load('./img/MARSWINS copy.jpg');
+const backgrd = new THREE.TextureLoader().load('./img/marsVictory.jpg');
 scene.background = backgrd;
 
 const marsText = new THREE.TextureLoader().load('./img/HOME.jpg');
